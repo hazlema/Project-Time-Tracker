@@ -1,0 +1,54 @@
+		.layout {
+			height: 100%;
+			width: 100%;
+			color: #000;
+		}
+		.layout-header, 
+		.layout-footer,
+		.layout-content {
+			position: absolute;
+			width: 100%;
+			background: #333; 
+			left:0;
+			right:0;
+		}
+		.layout-header:after, 
+		.layout-footer:after,
+		.layout-content:after {
+			clear:both;
+		}
+		.layout-header {
+			top:0;
+			height:50px;
+			background-color: #000000;
+			background: -webkit-gradient(linear, 0 100%, 0 0, from(#4f4f4f), to(#000000));
+			background: -webkit-linear-gradient(#4f4f4f 0%, #000000 100%);
+			background: -moz-linear-gradient(#4f4f4f 0%, #000000 100%);
+			background: -o-linear-gradient(#4f4f4f 0%, #000000 100%);
+			background: linear-gradient(#4f4f4f 0%, #000000 100%);
+		}
+		.layout-content {
+			top:50px;
+			bottom:50px;
+			overflow-y: auto;
+		}
+		.layout-footer {
+			background-color: #4f4f4f;
+			background: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), to(#4f4f4f));
+			background: -webkit-linear-gradient(#000000 0%, #4f4f4f 100%);
+			background: -moz-linear-gradient(#000000 0%, #4f4f4f 100%);
+			background: -o-linear-gradient(#000000 0%, #4f4f4f 100%);
+			background: linear-gradient(#000000 0%, #4f4f4f 100%);
+			bottom:0;
+			height:50px;
+		}
+		.layout-gutter {
+			margin: 5px;
+			background-color: transparent;
+		}
+		.-gutter-30 {
+			padding-top:6px;
+			padding-left: 25px;
+			color: white;
+			font-size: 18px;
+		}

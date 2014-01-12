@@ -1,0 +1,122 @@
+	.project-container {
+		height: 65px;
+		width: 100%;
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(rgba(204, 204, 204, 1)), color-stop(0.5, rgba(255, 255, 255, 1)), color-stop(0.99, rgba(204, 204, 204, 1)), to(rgba(0, 0, 0, 1)));
+		background: -webkit-linear-gradient(rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(204, 204, 204, 1) 99%, rgba(0, 0, 0, 1) 100%);
+		background: -moz-linear-gradient(rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(204, 204, 204, 1) 99%, rgba(0, 0, 0, 1) 100%);
+		background: -o-linear-gradient(rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(204, 204, 204, 1) 99%, rgba(0, 0, 0, 1) 100%);
+		background: linear-gradient(rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(204, 204, 204, 1) 99%, rgba(0, 0, 0, 1) 100%);
+		cursor: pointer;
+		overflow: hidden;
+	}
+	.project-container:after {
+		clear: both;
+	}
+	.project-icon {
+		float: left;
+		height: 65px;
+		width: 65px;
+		background-color: #ccc;
+		background-color: rgba(0, 0, 140, .09);
+	}
+	.project-icon div {
+		margin: 5px;
+		height: 55px;
+		width: 55px;
+	}
+	.project-text {
+		padding-top: 7px;
+		margin-left: 70px;
+	}
+	.project-title {
+		font-weight: bolder;
+		font-size: 15px;
+	}
+	.project-desc {
+		font-weight: bolder;
+		font-size: 13px;
+	}
+	.project-edit {
+		background-color: #333;
+		padding-right: 5px;
+		text-align: right;
+		background-color: #ddd;
+		overflow: hidden;
+		height: 0px;
+	}
+	.project-edit button {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: #0000FF;
+		color: #fff;
+		border: 1px solid #0000FF;
+		border-radius: 5px;
+	}
+	.project-edit .red {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: #FF0000;
+		color: #fff;
+		border: 1px solid #FF0000;
+		border-radius: 5px;
+	}
+	.project-edit-reveal {
+		-moz-animation-duration: .5s;
+		-moz-animation-name: reveal;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+		-webkit-animation-duration: .5s;
+		-webkit-animation-name: reveal;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+	}
+	@-moz-keyframes reveal {
+		from {
+			height: 0px;
+		}
+		to {
+			height: 45px;
+		}
+	}
+	@-webkit-keyframes reveal {
+		from {
+			height: 0px;
+		}
+		to {
+			height: 45px;
+		}
+	}
+	.project-edit-hide {
+		-moz-animation-duration: .5s;
+		-moz-animation-name: hide;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+		-webkit-animation-duration: .5s;
+		-webkit-animation-name: hide;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+	}
+	@-moz-keyframes hide {
+		from {
+			height: 45px;
+		}
+		to {
+			height: 0px;
+		}
+	}
+	@-webkit-keyframes hide {
+		from {
+			height: 45px;
+		}
+		to {
+			height: 0px;
+		}
+	}
+
+	
